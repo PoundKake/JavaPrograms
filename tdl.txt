@@ -1,0 +1,14 @@
+PongGameProg.java: "To do list"
+------------------------------
+1) Color the background of the main game board.
+	a) Google "Java swing GUI" and read some tutorials on how to use that. 
+	b) If swing isn't a good option, check out other alternative methods.
+	
+
+2) Figure out how to make the paddles.
+	a) Draw and dsplay colored (white) rectanlges 
+		- (Didn't work) Try using the "Graphics2D" class instead of "Graphics" 
+		- Paddle had to extend "Applet" which uses a "paint" function that takes and argument (Graphics g).
+	b)  Figure out how to get both rectangles to display on the board at the same time.  
+		- Look at "JPanel" api.  Specifically LayoutManager for the parameter to be passed into JPanel. 
+		- Try using the pong board as an applet and then use the "void paint(Graphics g)" function to add the desired rectangles.  This allows me to move the rectangles and possibly even add the ball a little easier.   
