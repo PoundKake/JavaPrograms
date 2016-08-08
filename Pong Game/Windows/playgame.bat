@@ -1,2 +1,2 @@
-#!/bin/bash
+@ECHO off
 java PongGameProg
