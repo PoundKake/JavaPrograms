@@ -29,15 +29,15 @@ public class PongPanel extends JPanel{
 	public PongPanel(){
 		initialize();
 	}
-
-	// Initialize:
+	
+	// Init:
 	public void initialize(){
 		running = true;
 		pic = new BufferedImage(PongGameProg.WIDTH, PongGameProg.HEIGHT, BufferedImage.TYPE_INT_RGB);
 		g = (Graphics2D) pic.getGraphics();
 		g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 	}
-
+	
 	// Play:
 	public void play(){
 		try{

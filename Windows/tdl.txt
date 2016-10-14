@@ -2,7 +2,7 @@ PongGameProg.java: "To do list"
 ------------------------------
 1) Color the background of the main game board. (COMPLETED ALL)
 	a) Google "Java swing GUI" and read some tutorials on how to use that. 
-	b) If swing isn't a good option, check out other alternative methods.
+	b) If swing isn't a good option, check out other alternative methods. (SWING WILL WORK FOR NOW)
 	
 
 2) Figure out how to make the paddles. (IN PORGRESS)

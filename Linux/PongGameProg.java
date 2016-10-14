@@ -7,7 +7,7 @@
 */
 
 // Imports:
-// import java.awt.*;
+// Import java.awt.*;
 import javax.swing.JFrame;
 
 // Program:

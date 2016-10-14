@@ -39,12 +39,15 @@ public class PongBall{
 		if(x < 0){
 			dx = -dx;
 		}
+
 		if(y < 0){
 			dy = -dy;
 		}
+
 		if(x > PongGameProg.WIDTH - 26){
 			dx = -dx;	
 		}
+		
 		if(y > PongGameProg.HEIGHT - 50){
 			dy = -dy;
 		}
@@ -66,13 +69,13 @@ public class PongBall{
 		g.fillOval(x, y, bsize, bsize);
 	}
 
-	// Left Paddle Collision:
-	public boolean lpcollision(){
-		return lp.getBounds().intersects(lp.getBounds());
-	}
+	// // Left Paddle Collision:
+	// public boolean lpcollision(){
+	// 	return lp.getBounds().intersects(lp.getBounds());
+	// }
 
-	// Right Paddle Collision:
-	public boolean rpcollision(){
-		return rp.getBounds().intersects(lp.getBounds());
-	}
+	// // Right Paddle Collision:
+	// public boolean rpcollision(){
+	// 	return rp.getBounds().intersects(lp.getBounds());
+	// }
 }//End 
