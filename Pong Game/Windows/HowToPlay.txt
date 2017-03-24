@@ -1,8 +1,0 @@
-Set up Instructions:
---------------------
-** Makre sure Java is installed on your computer. **
-** Make sure all of the files are in the same folder.  "PongGameProg" is probably a good folder name.**
-
-1) Click the "playgame.bat" file.
-
-2) Enjoy the game! 
