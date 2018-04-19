@@ -15,7 +15,7 @@ public class RightPaddle{
 	private int y, dy;
 	private final int WIDTH = 30, HEIGHT = 150;
 
-	//Construction: 
+	//Construction:
 	public RightPaddle(){
 		y = 30;
 		dy = 4;
@@ -44,6 +44,5 @@ public class RightPaddle{
 		g.setColor(Color.CYAN.darker());
 		g.fillRect(940, y, WIDTH, HEIGHT);
 	}
-}	
-//End 
-	
+}
+//End

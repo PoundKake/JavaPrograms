@@ -15,6 +15,7 @@ public class PongBall{
 	// Variables:
 	private int x, y, dx, dy;
 	private final int bsize = 20;
+	private int switchCase;
 
 	// Construction:
 	public PongBall(){
@@ -22,7 +23,7 @@ public class PongBall{
 		y = 350;
 		dx = 1;
 		dy = 4;
-	}	
+	}
 
 	// Update:
 	public void move(){
@@ -31,20 +32,43 @@ public class PongBall{
 
 	// Set Position:
 	public void setPosition(){
-		x += dx;
-		y += dy;
+		/**
+		* TODO fix the switch case so it resets after exectuting.
+		*/
+		x += dx;	y += dy;
 
 		if(x < 0){
-			dx = -dx;
+			switchCase = 1;
 		}
 		if(y < 0){
-			dy = -dy;
+			switchCase = 2;
 		}
 		if(x > PongGameProg.WIDTH - 26){
-			dx = -dx;	
+			switchCase = 1;
 		}
 		if(y > PongGameProg.HEIGHT - 50){
-			dy = -dy;
+		 	switchCase = 2;
+		}
+		// if(x <= RightPaddle.getClipBounds() || y <= RightPaddle.getClipBounds()){
+		// 	switchCase = 3;
+		// }
+		if(x <= LeftPaddle.getBorder() || y <= LeftPaddle.getBorder()){
+			switchCase = 3;
+		}
+
+		else {
+			switchCase = 0;
+		}
+
+		switch(switchCase){
+			case 1: dx = -dx;
+			break;
+
+			case 2: dy = -dy;
+			break;
+
+			case 3: dx = -dx;	dy = -dy;
+			break;
 		}
 	}
 
@@ -54,4 +78,4 @@ public class PongBall{
 		g.fillOval(x, y, bsize, bsize);
 	}
 
-}//End 
+}//End

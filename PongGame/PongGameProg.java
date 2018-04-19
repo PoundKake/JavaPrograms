@@ -16,7 +16,7 @@ public class PongGameProg{
 	public static final int WIDTH = 1000, HEIGHT = 700;
 
 	// Main:
-	public static void main(String[] args){	
+	public static void main(String[] args){
 		// Local Variables:
 		JFrame f = new JFrame("Pong by Christian Vance");
 		PongPanel _pp = new PongPanel();
@@ -24,7 +24,7 @@ public class PongGameProg{
 		// Construction:
 		f.getContentPane().add(_pp);
 		f.setSize(WIDTH, HEIGHT);
-		f.setLocation(300, 150);	
+		f.setLocation(300, 150);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);
 		f.setResizable(false);
@@ -32,4 +32,4 @@ public class PongGameProg{
 		// Starts the game.
 		_pp.play();
 	}
-}//End 
+}//End
