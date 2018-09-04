@@ -1,35 +1,48 @@
-/*
-* Program: PongGameProg.java
-* Description:  A remake of the classic arcade game Pong.
-* Author: Christian Vance
-* Version: 1.0
-* Last Modified: 07-23-2016
-*/
-
 // Imports:
 // Import java.awt.*;
 import javax.swing.JFrame;
 
-// Program:
-public class PongGameProg{
-	// Variables:
-	public static final int WIDTH = 1000, HEIGHT = 700;
+/**
+ * Program: PongGameProg.java
+ * Description: A remake of the classic arcade game Pong for educational purposes.
+ * Author: Christian Vance
+ * Version: 1.1
+ * Last Modified: 09-04-2018
+ */
 
-	// Main:
-	public static void main(String[] args){
+// Program:
+public class PongGameProg
+{
+	// Variables:
+	public static final int WIDTH = 1000;
+    public static final int HEIGHT = 700;
+
+    public int getWidth()
+    {
+        return WIDTH;
+    }
+
+    public int getHeight()
+    {
+        return HEIGHT;
+    }
+
+	// Main Method:
+	public static void main( String[] args )
+    {
 		// Local Variables:
-		JFrame f = new JFrame("Pong by Christian Vance");
-		PongPanel _pp = new PongPanel();
+		JFrame frame = new JFrame( "Pong by Christian Vance" );
+		PongPanel pong_panel = new PongPanel();
 
 		// Construction:
-		f.getContentPane().add(_pp);
-		f.setSize(WIDTH, HEIGHT);
-		f.setLocation(300, 150);
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.setVisible(true);
-		f.setResizable(false);
+		frame.getContentPane().add( pong_panel );
+		frame.setSize( WIDTH, HEIGHT );
+		frame.setLocation( 300, 150 );
+		frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+		frame.setVisible( true );
+		frame.setResizable( false );
 
 		// Starts the game.
-		_pp.play();
+		pong_panel.play();
 	}
 }//End

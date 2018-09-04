@@ -1,16 +1,19 @@
-/*
-* Program: RightPaddle.java
-* Description:  Right paddle for Pong Game.
-* Author: Christian Vance
-* Last Modified: 07-23-2016
-*/
 // Imports:
 import java.awt.*;
 import java.applet.*;
 import javax.swing.*;
 
+/**
+ * Program: RightPaddle.java
+ * Description: Right paddle for Pong Game.
+ * Author: Christian Vance
+ * Version: 1.1
+ * Last Modified: 09-04-2018
+ */
+
 // Program:
-public class RightPaddle{
+public class RightPaddle
+{
 	//Variables:
 	private int y, dy;
 	private final int WIDTH = 30, HEIGHT = 150;
